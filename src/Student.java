@@ -1,11 +1,12 @@
 import lombok.Getter;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Getter
 public class Student {
     private String studyNumber;
-    private Map<Course, Grade> grades;
+    private Map<Course, Grade> grades = new HashMap<>();
 
     public Student(String studyNumber) {
         this.studyNumber = studyNumber;
